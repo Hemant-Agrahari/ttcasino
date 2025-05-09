@@ -1,0 +1,55 @@
+.header {
+    background-color: var(--dark-slate-gray);
+    color: var(--white);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.yellow-class{
+    color:var(--orange) !important; 
+}
+
+.logo-img {
+    margin-right: 30px;
+}
+
+.logo-img img{
+object-fit: contain;
+}
+.nav-links span{
+    color: var(--white);
+    font-size: 15px;
+    white-space: nowrap;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-outline {
+    background: transparent;
+    color:var(--light-bright-green);
+    border: 1px solid var(--light-bright-green);
+    padding: 6px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+}
+
+.btn-filled {
+    background-color: var(--light-bright-green);
+    color: black;
+    padding: 6px 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+}

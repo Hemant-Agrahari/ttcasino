@@ -1,0 +1,56 @@
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0f0f0f;
+  padding: 6px 0;
+  position: fixed;
+  bottom: 0;
+  z-index: 96;
+  left: 0;
+  right: 0;
+}
+
+.bottom-nav-width {
+  left: 220px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  color: var(--white);
+  text-align: center;
+}
+
+.nav-label {
+  margin-top: 2px;
+  color: var(--white);
+  font-weight: normal;
+}
+
+.menu-img img {
+  filter: invert(49%) sepia(0) saturate(48%) hue-rotate(-5deg) brightness(165%)
+    contrast(164%);
+}
+
+.active-icon {
+  background: linear-gradient(
+    90deg,
+    var(--blue-vivid) 0%,
+    var(--blue-violet) 98.45%
+  );
+  border-radius: 3px;
+  padding: 7px 7px;
+}
+
+.active-label {
+  color: var(--blue) !important;
+  font-weight: bold;
+}
+
+.sidebar .close-button {
+  position: relative;
+  bottom: 0.5rem;
+}

@@ -1,0 +1,139 @@
+.cashBackDiv {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(119.77deg, var(--burgundy) 2.99%, var(--burgundy) 100%);
+  background: var(--gray-600);
+  border-radius: 10px;
+}
+
+.cashback_button1 {
+  background: var(--light-gray-transparent);
+  border-radius: 10px;
+  padding: 16px;
+  width: 100%;
+  color: var(--white);
+  font-weight: 700;
+  border: 0;
+  margin-bottom: 8px;
+}
+
+.cashback_button1 .original-cashback-percententage{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: var(--yellow-vivid);
+}
+
+.cashback_buttonBonus1 {
+  background:var(--light-gray-transparent);
+  border-radius: 10px;
+  padding: 16px;
+  color: var(--white);
+  font-weight: 700;
+  border: 0;
+}
+
+.cashback_buttonBonus2 {
+  width: 55% !important;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 16px;
+  color: var(--white);
+  font-weight: 700;
+  border: 0;
+  margin-bottom: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+.cash_btn {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.vipCashImage {
+  float: right;
+  width: 8rem;
+  height: 4rem;
+  margin-top: 5px;
+}
+
+.digit {
+  background: linear-gradient(180deg, var(  --dark-gray-transparent) -300%, var(  --magenta-transparent) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  border-radius: 10px;
+  border: 1px solid var(--light-gray-1);
+}
+
+.digit h6 {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.digit_check1 {
+  font-size: 72px;
+  background: var(--white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 100px;
+  text-align: center;
+}
+
+.digit_check2 {
+  font-size: 72px;
+  background: var(--white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 100px;
+  text-align: center;
+}
+
+.digit_check3 {
+  font-size: 72px;
+  background: var(--white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 100px;
+  text-align: center;
+}
+
+.cashback_buttonBonus2{
+  background: linear-gradient(90deg, var(--blue-vivid) 0%, var(--blue-violet) 98.45%);
+  border: 1px solid var(--blue) !important;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1299px) {
+  .digit_check1 {
+    font-size: clamp(36px, 6vw, 70px);
+  }
+  .digit h6.fs-6 {
+    font-size: clamp(14px, 1.7vw, 16px) !important;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .cashback_buttonBonus1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width:767.98px) {
+  .vipCashImage {
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .cashback_buttonBonus2 {
+    display: block;
+  }
+}

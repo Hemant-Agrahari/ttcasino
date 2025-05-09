@@ -1,0 +1,758 @@
+:root {
+  --dark: #232323;
+  --red: #ff0000;
+  --white: #fff;
+  --transparent-white: #ffffff70;
+  --semi-transparent-white: #ffffff96;
+  --black: #000000;
+  --green: #6dfe8f;
+  --gray: #000;
+  --gray-100: #000;
+  --gray-300: #373a43;
+  --gray-400: #b5b5b5;
+  --gray-500: #3c3f48;
+  --gray-600: #0f131a;
+
+  --gray-100: #b5b5b5;
+  --gray-200: #bebebe;
+  --gray-300: #666666;
+  --gray-400: #3a3a3a;
+  --gray-500: #333131;
+  --gray-600: #2b2b2b;
+  --gray-700: #232323;
+  --gray-800: #171717;
+  --gray-900: #3b3939;
+  --gray-2:#26364b;
+  --gray-charcoal: #212529;
+  --gray-1: #ddd;
+  --blue-royal-transparent: #4473e9e0;
+  --royal-blue: #224a93;
+  --royal-blue-1: #3360ff;
+  --royal-blue-2: #314f8e;
+  --vivid-sky-blue: #3a7bf0;
+  --sky-blue: #6587ff;
+  --blue-violet-transparent: #7e43def5;
+  --raspberry-red: #dd244a;
+  --blue: #6458e3;
+  --soft-blue: #5f66fd;
+  --steel-blue: #90a3c7;
+  --midnight-blue: #161c4f;
+  --blue-deep: #1d1b31;
+  --blue-violet: #7e43de;
+  --blue-vivid: #4473e9;
+  --steel-blue: #1e5d80;
+  --blue-charcoal: #272c4b;
+  --blue-royal-1: #3e77e5;
+  --blue-royal-2: #0c1afe;
+  --blue-sapphire: #2f459f;
+  --vivid-blue: #3586ff;
+  --blue-dark-slate: #32395f;
+  --blue-gray-mute: #7f8aba;
+  --purple-plum: #4c184e;
+  --burgundy: #85194b;
+  --burgundy-1: #212020;
+  --burgundy-2: #191518;
+  --burgundy-red: #420c29;
+  --burgundy-dark: #31001b;
+  --purple-pink: #86188f;
+  --deep-plum: #4a184b;
+  --deep-pink: #a2246b;
+  --golden-yellow: #ffd569;
+  --lemon-yellow: #ffed4a;
+  --pink-coral: #dd566e;
+  --medium-violet: #9643ff;
+  --yellow-vivid: #ffc635;
+  --golden-yellow: #ffc961;
+  --sunshine-yellow: #ffcf53;
+  --yellow-bg: #ffcd3c;
+  --crimson: #580935;
+  --crimson-1: #5c2242;
+  --crimson-2: #c90023;
+  --burgundy: #85194b;
+  --purple-heart: #871990;
+  --light-purple: #bc68ff;
+  --vibrant-purple: #a737ff;
+  --bold-purple: #9010f5;
+  --light-gray-transparent: #d9d9d91a;
+  --dark-gray-transparent: #424242c4;
+  --magenta-transparent: #a2246b00;
+  --light-gray-1: #b7b5b6;
+  --light-gray-2: #dee2e6;
+  --charcoal-gray: #383838;
+  --charcoal-black: #171717;
+  --charcoal-black-1: #171d29;
+  --charcoal-black-2: #161c25;
+  --charcoal-black-3: #141414;
+  --pale-blue: #abbdd9;
+  --slate-gray: #4d4d4d;
+  --dusty-gray: #63738d;
+  --gray-3: #4d4d4d;
+  --bright-blue: #667bff;
+  --bright-blue: #2b54e6;
+  --bright-blue-1: #1469ca;
+  --bright-blue-2: #193299;
+  --mid-blue: #1f224a;
+  --sky-blue-3: #63a1ff;
+  --lilac: #c99eff;
+  --butter-yellow: #fdf4b4;
+  --lavender-blue-3: #8a96ca;
+  --raspberry-red-1: #da384e;
+  --raspberry-red-2: #d73a50;
+  --crimson-red-1: #550b33;
+  --hot-pink: #ec5aa2;
+  --hot-pink-1: #e611dd;
+  --dark-orchid: #600d69;
+  --wine-red: #85194b;
+  --midnight-blue: #181e46;
+  --midnight-blue-1: #471883;
+  --orange: #e67711;
+  --periwinkle: #a0abdb;
+  --periwinkle-1: #ade8f4;
+  --font-weight: 600;
+
+  --dark-slate-gray:#33353d;
+  --dark-slate-gray-1:#272930;
+  --dark-slate-gray-2:#373a43;
+  --dark-slate-gray-3:#3c3f48;
+  --light-bright-green:#6dfe8f;
+  --light-white-1:#a0a0a0;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+.text-color-danger {
+  color: var(--red);
+}
+.table-tr {
+  color: var(--periwinkle);
+}
+.margin-top-14 {
+  margin-top: 14vh;
+}
+.margin-top-12 {
+  margin-top: 12vh;
+}
+.yellow-bg {
+  color: var(--yellow-bg);
+}
+.medium-violet {
+  color: var(--medium-violet);
+}
+.yellow-vivid-color {
+  color: var(--yellow-vivid);
+}
+
+/* Define reusable font-weight classes with custom naming convention */
+.font-weight-100 {
+  font-weight: 100;
+}
+
+.\! font-weight-600 {
+  font-weight: 600;
+}
+.font-weight-200 {
+  font-weight: 200;
+}
+.font-weight-300 {
+  font-weight: 300;
+}
+.font-weight-400 {
+  font-weight: 400;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+.font-weight-700 {
+  font-weight: 700;
+}
+.font-weight-800 {
+  font-weight: 800;
+}
+.font-weight-900 {
+  font-weight: 900;
+}
+
+/* Define reusable font-size classes */
+.font-size-12 {
+  font-size: 12px;
+}
+.font-size-14 {
+  font-size: 14px;
+}
+.font-size-16 {
+  font-size: 16px;
+}
+.font-size-17 {
+  font-size: 17px;
+}
+.font-size-18 {
+  font-size: 18px;
+}
+.font-size-20 {
+  font-size: 20px;
+}
+.font-size-22 {
+  font-size: 22px;
+}
+.font-size-24 {
+  font-size: 24px;
+}
+.font-size-30 {
+  font-size: 30px;
+}
+.font-size-32 {
+  font-size: 32px !important;
+}
+.font-size-36 {
+  font-size: 36px;
+}
+
+.over-flow-x-auto {
+  overflow-x: auto;
+}
+
+html,
+body {
+  font-family: inherit;
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: none; */
+  box-shadow: inset 0 0 5px var(--gray-300);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--gray-400);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-300);
+}
+
+/* For chrome, Safari, Edge, Opera : */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--white);
+  -webkit-box-shadow: 0 0 0px 1000px var(--gray-600, --burgundy-red) inset;
+  border-radius: 0 !important;
+}
+
+body {
+  background-color: #272930 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  overflow-x: hidden;
+  width: 100%;
+  color: var(--gray-100) !important;
+  font-family: inherit !important;
+  font-weight: 400 !important;
+}
+
+.container {
+  max-width: 1054px;
+}
+
+main {
+  transition: 0.5s;
+  margin-top: 75px;
+  /* margin-top: 65px; */
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+main.sideBarOpen {
+  margin-left: 315px;
+  margin-left: 220px;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  /* font-family: 'Inter', sans-serif !important; */
+  font-family: inherit !important;
+}
+
+.disabled {
+  cursor: not-allowed !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.border-none {
+  border: none;
+}
+
+/* common css for forgotpassword login affiliate modal wallet deposit modal */
+.modal_form_signIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* common css for forgotpassword login affiliate modal wallet deposit modal close */
+.close_form_btn {
+  background-color: transparent;
+  border: none;
+}
+
+/* ----------- Sidebar start ----- */
+.sidebar.sidebarOpen {
+  overflow: auto;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  left: 0;
+  width: 220px;
+}
+
+.sidebar.sidebarOpen::-webkit-scrollbar {
+  display: none;
+}
+
+.css-1f773le-MuiButtonBase-root-MuiAccordionSummary-root.Mui-focusVisible {
+  background-color: transparent !important;
+}
+
+.modal-btn-withdraw {
+  width: 60%;
+  padding: 11px 15px;
+  border-radius: 10px;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.react-datepicker__header {
+  background: var(--gray-600, --burgundy) !important;
+  border: none !important;
+  color: var(--white) !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  color: var(--white) !important;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  color: var(--white) !important;
+}
+
+.react-datepicker__month {
+  background: var(--gray-300, --burgundy);
+  margin: 0 !important;
+  padding: 0.4rem !important;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+  background: var(--gray-500, --burgundy) !important;
+}
+
+.MuiList-root.MuiList-padding.MuiMenu-list, .MuiList-root.MuiList-padding.MuiMenu-list li:hover {
+  color: var(--white);
+  background: var(--gray-600, --crimson) !important;
+}
+
+
+.MuiList-root.MuiList-padding.MuiMenu-list li {
+  background: var(--gray-400, --burgundy) !important;
+  gap: 8px;
+}
+
+.react-datepicker__quarter-text:hover,
+.react-datepicker__year-text:hover {
+  background: var(--gray-500, --crimson) !important;
+}
+
+.react-datepicker__day:hover,
+.react-datepicker__month-text:hover {
+  background: var(--gray-600, --crimson) !important;
+}
+
+.MuiPaginationItem-root {
+  color: var(--white);
+  font-weight: 800;
+  border: 2px solid var(--gray-600, --deep-pink);
+  line-height: 2 !important;
+  border-radius: 4px !important;
+}
+
+.white-input svg {
+  color: var(--white) !important;
+}
+
+.MuiBox-root input {
+  padding-inline: 10px;
+}
+
+.MuiTooltip-arrow {
+  margin-top: -1.71em;
+  width: 30px;
+  height: 20px;
+  color: transparent;
+}
+
+.MuiTooltip-arrow:before {
+  border: 1px solid var(--gray-1);
+}
+
+/* This is used in multi place */
+.coin-margin {
+  margin-right: 3px;
+}
+
+.DepositTab {
+  background: linear-gradient(
+    119.77deg,
+    var(--steel-blue) 2.99%,
+    var(--blue-royal-2) 100%
+  );
+  border-radius: 10px;
+  padding: 25px 50px 25px;
+}
+
+.DepositTab {
+  background: linear-gradient(
+    119.77deg,
+    var(--gray-800, --burgundy-red) 2.99%,
+    var(--gray-800, --burgundy-red) 100%
+  );
+  border-radius: 10px;
+  padding: 25px 12px 25px;
+}
+
+main.sideBarOpen iframe {
+  height: calc(100dvh - 77px);
+}
+
+.react-datepicker__header,
+.react-datepicker__day--selected:hover,
+.react-datepicker__day--selected,
+.react-datepicker__day--in-range {
+  background-color: var(--gray-600, --crimson-1) !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header,
+.react-datepicker__day-name {
+  color: var(--white) !important;
+}
+
+/* This class is used in backtotop home game header */
+.loginSignUp-btn .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 11px 14px 9.5px 0px;
+}
+
+.f-16 {
+  font-size: clamp(14px, 1.5vw, 16px);
+}
+
+.f-15 {
+  font-size: clamp(12px, 1.2vw, 15px);
+}
+
+.g_section_sub:focus-visible {
+  outline: none !important;
+}
+
+.title {
+  color: var(--gray-400);
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.text-center {
+  margin-top: 20px;
+}
+
+.custom-input input::placeholder {
+  color: var(--white);
+}
+
+.search-btn {
+  margin-right: 12px;
+}
+
+.container {
+  max-width: min(95%, 1920px) !important;
+}
+
+/* this is a  for affiliate modal*/
+.side-bar-para {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--white);
+  margin-bottom: 16px;
+  padding: 12px 12px 12px 40px;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  border: 1px solid transparent;
+  border-radius: 0;
+  display: block;
+  text-decoration: none;
+}
+
+/* This class use in affiliate modal  */
+.side-bar-para {
+  cursor: pointer;
+  line-height: 15px;
+  margin-bottom: 16px;
+  padding: 12px 10px 12px 6px;
+  border: none;
+}
+
+.side-bar-para svg {
+  margin-right: 6px;
+}
+
+.bg-gray-400 {
+  background-color: var(--gray-400);
+}
+
+/* common used css property */
+.modal-btn-CPF-disabled,
+.modal-btn-withdraw,
+.modal-btn-CPF,
+.balance-deposit .deposit-btn,
+.hpMenu-botm .profile-logout,
+.referalPage-tab .MuiTabs-root .MuiTabs-indicator,
+.bonus-date .search-btn,
+.userButtonCopy {
+  background: linear-gradient(
+    90deg,
+    var(--blue-vivid) 0%,
+    var(--blue-violet) 98.45%
+  );
+  border: 1px solid var(--blue) !important;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1399.98px) {
+  main.sideBarOpen {
+    margin-left: 215px;
+  }
+}
+
+/* this is common class */
+@media screen and (max-width: 1299px) {
+  .modal_form_signIn input {
+    padding-block: 16.5px !important;
+    padding-inline: 5px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  main.sideBarOpen {
+    margin-left: 0;
+  }
+}
+
+/* This is a common class */
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  main {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  /* this is a common class */
+  .referalPageSection-title .MuiSvgIcon-root {
+    font-size: 20px;
+  }
+}
+
+.games.active,
+.home.active,
+.poker.active,
+.ranking.active,
+.promotions.active,
+.livesupport.active {
+  background: linear-gradient(
+    90deg,
+    var(--blue-vivid) 0%,
+    var(--blue-violet) 98.45%
+  );
+  border-radius: 10px;
+}
+
+.fs-28 {
+  font-size: clamp(14px, 5px + 1vw, 28px) !important;
+}
+
+.fs-32 {
+  font-size: clamp(16px, 7px + 1.1vw, 32px) !important;
+}
+
+.fs-40 {
+  font-size: clamp(16px, 8px + 1.1vw, 40px) !important;
+}
+
+.fs-100 {
+  font-size: clamp(40px, 10px + 3.5vw, 100px) !important;
+}
+
+.py-100 {
+  padding-block: clamp(50px, 6vw, 100px);
+}
+
+.css-1d3ml05-MuiPopper-root-MuiTooltip-popper {
+  z-index: 99 !important;
+}
+
+.css-1ylgca0-MuiModal-root-MuiPopover-root-MuiMenu-root
+  .MuiPaper-root::-webkit-scrollbar {
+  background-color: var(--gray-charcoal) !important;
+  border: var(--gray-charcoal) !important;
+}
+
+.search-bar .css-u9pgfk-MuiInputBase-root-MuiOutlinedInput-root {
+  background-color: var(--black);
+}
+
+.search-bar
+  .css-u9pgfk-MuiInputBase-root-MuiOutlinedInput-root
+  .MuiOutlinedInput-input {
+  height: 1.9em;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input.Mui-disabled {
+  -webkit-text-fill-color: var(--white) !important;
+}
+
+.css-1tjar8b-MuiTypography-root {
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.resetPassword-container {
+  background-color: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.resetPassword {
+  width: 50%;
+  max-width: 465px !important;
+  background: var(--gray-800);
+  border-radius: 10px;
+  padding: 15px clamp(20px, 3vw, 40px) 30px;
+  margin: 10px 5px 10px;
+  overflow: initial;
+}
+
+.gameCategory {
+  margin-top: 90px;
+}
+
+.gameCategory .tab-title {
+  border-left: 6px solid var(--blue-vivid);
+  background: linear-gradient(90deg, var(--black) 0%, var(--gray-700) 100%);
+  padding: 12px 24px;
+  width: 100%;
+  max-width: 410px;
+}
+
+.gameCategory .tab-title h4 {
+  background: linear-gradient(
+    90deg,
+    var(--blue-vivid) 0%,
+    var(--blue-violet) 98.45%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0;
+  font-size: clamp(18px, 1.8vw, 20px);
+  font-weight: 600;
+}
+
+.select-white .form-select {
+  background-color: var(--gray-600);
+  border-radius: 8px;
+  color: var(--white);
+  border: 1px solid var(--gray-300) !important;
+  cursor: pointer !important;
+}
+
+.select-white.form-floating > .form-select ~ label {
+  color: var(--blue);
+  font-size: 0.9rem;
+}
+
+.select-white.form-floating > .form-select ~ label::after {
+  background-color: transparent;
+  color: var(--blue);
+}
+
+@media screen and (max-width: 991.98px) {
+  .resetPassword {
+    width: 80%;
+    max-width: 465px !important;
+  }
+}
+
+.h-30vh {
+  height: 30vh;
+}
+
+.form-floating {
+  overflow-x: clip;
+}
+
+.tooltip-btn{
+  margin-left: 7px !important;
+}

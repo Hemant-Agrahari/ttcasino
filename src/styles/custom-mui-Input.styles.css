@@ -1,0 +1,90 @@
+/* CustomOutlinedInput.css */
+.custom-outlined-input {
+    background: var(--gray-600, --gray-500);
+    border-radius: 8px;
+  }
+  
+  .custom-outlined-input .MuiOutlinedInput-input {
+    color: var(--white);
+    border: none;
+    background: transparent;
+  }
+  
+  .custom-outlined-input .MuiInputBase-input::placeholder {
+    color: var(--white);
+    opacity: 1;
+  }
+  
+  .custom-outlined-input .MuiOutlinedInput-root fieldset {
+    border-color: transparent;
+  }
+  
+  .custom-outlined-input .MuiOutlinedInput-root:hover fieldset {
+    border-color: transparent;
+  }
+  
+  .custom-outlined-input .MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: transparent;
+  }
+  
+  .custom-outlined-input .MuiInputLabel-root {
+    color: var(--white);
+  }
+  
+  .custom-outlined-input .MuiInputAdornment-root {
+    color: var(--white);
+  }
+  
+
+  /* css for custom dropdown select */
+  
+#floatingSelect {
+  margin-top: 17px;
+}
+
+.label-dropdown{
+  margin-top: -11px;
+  color: var(--blue);
+  padding-bottom: 20px !important;
+  line-height: 18px;
+}
+
+.mui-custom-select {
+  background: var(--gray-600, var(--gray-500));
+  border-radius: 8px;
+  color: #000;
+}
+
+.mui-custom-select .MuiSelect-icon {
+  color: var(--gray-300);
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.Mui-focused.text-capitalize.text-white.mui-custom-select.css-1ualgfl-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  height: 55px;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.text-capitalize.text-white.mui-custom-select.css-1ualgfl-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root{
+height: 55px;
+}
+
+.MuiPopover-paper .custom-mui-dropdown-select:last-child  {
+  color: var(--white);
+  background-color: var(--gray-900) !important;
+}
+
+.MuiPopover-paper .sorting-mui-dropdown-select:last-child  {
+  color: var(--white);
+  background-color: var(--gray-900) !important;
+}
+
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{
+  background-color: unset;
+}
+
+.custom-dropdown-menu-items{
+  max-width: 230px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

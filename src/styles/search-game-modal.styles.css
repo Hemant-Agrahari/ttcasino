@@ -1,0 +1,20 @@
+.search-modal-container {
+  height: 90vh;
+  background-color: var(--gray-700, --burgundy-dark);
+}
+
+.search-modal .MuiDialog-paper {
+  max-width: 1200px !important;
+  padding: clamp(14px, 2vw, 24px);
+}
+
+.modal-game-list {
+  overflow: auto;
+  height: calc(100vh - 200px);
+}
+
+@media screen and (max-width: 767.98px) {
+  .modal-game-list {
+    height: calc(100vh - 290px);
+  }
+}

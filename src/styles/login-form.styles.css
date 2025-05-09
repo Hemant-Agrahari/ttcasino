@@ -1,0 +1,94 @@
+.forgot-password-input-field {
+    background: var(--gray-500);
+    border-radius: 2px;
+  } 
+  
+  .forgot-password-input-field .MuiOutlinedInput-input {
+    color: var(--white);
+  }
+  
+  .forgot-password-input-field .MuiInputAdornment-root {
+    position: start;
+  }
+
+.forgot-password-input {
+  background: var(--gray-500);
+  border-radius: 2px;
+}
+
+.forgot-password-input .MuiOutlinedInput-input {
+  color:var(--white);
+}
+
+.forgot-password-input .MuiInputAdornment-root {
+  padding-left: 10px;
+}
+
+.forgot-password-input .input-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.login-age-verify-text{
+  color: var(--gray-200);
+}
+
+
+/* Login Tab and wallet Popp CSS*/
+.TabLogin_Signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 10px 14% 15px !important;
+  border: 1px solid var(--gray-300);
+  background: var(--gray-600);
+  padding: 3px;
+}
+
+.TabLogin_Signup .MuiTabs-root {
+  min-height: initial;
+  width: 100%;
+}
+
+.TabLogin_Signup .MuiTab-root {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: var(--white);
+  background-repeat: no-repeat;
+  background-position: 50px center;
+  padding: 11px clamp(20px, 2vw, 28px);
+  min-height: initial;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  border-radius: 8px;
+}
+
+.TabLogin_Signup .MuiTab-root.Mui-selected {
+  color: var(--white);
+}
+
+.TabLogin_Signup .MuiTabs-indicator {
+  border-radius: 8px;
+  height: 100%;
+  top: 0;
+}
+
+.TabLogin_Signup .MuiTabs-indicator{
+  background: linear-gradient(
+    90deg,
+    var(--blue-vivid) 0%,
+    var(--blue-violet) 98.45%
+  );
+  border: 1px solid var(--blue) !important;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .TabLogin_Signup {
+    margin: 10px 15px !important;
+  }
+}
