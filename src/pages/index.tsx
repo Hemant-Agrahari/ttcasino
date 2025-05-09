@@ -22,7 +22,11 @@ function Home() {
 
   const categories = [
     { name: 'All Games', icon: '/assets/images/home-1.svg' },
-    { name: 'Live Tables', icon: '/assets/images/livetables.svg', active: true },
+    {
+      name: 'Live Tables',
+      icon: '/assets/images/livetables.svg',
+      active: true,
+    },
     { name: 'New', icon: '/assets/images/new.svg' },
     { name: 'Bet Games', icon: '/assets/images/betgames.svg' },
     { name: 'First Games', icon: '/assets/images/1stp.svg' },
@@ -52,28 +56,27 @@ function Home() {
         <TopBanners />
         {/* Game List */}
         <div className="scroll-container">
-      {categories.map((item, index) => (
-        <div
-          key={index}
-          className={`scroll-item ${item.active ? 'active' : ''}`}
-        >
-          <img src={item.icon} alt={item.name} className="icon" />
-          <span className="label">{item.name}</span>
+          {categories.map((item, index) => (
+            <div
+              key={index}
+              className={`scroll-item ${item.active ? 'active' : ''}`}
+            >
+              <img src={item.icon} alt={item.name} className="icon" />
+              <span className="label">{item.name}</span>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
 
         {/* <GameList/> */}
 
         {/* search bar */}
         <div className="search-wrapper">
-
           <div className="search-container">
             <input
               type="text"
               placeholder="Quick Search"
               className="search-input"
-              name='searchName'
+              name="searchName"
             />
           </div>
         </div>
@@ -90,7 +93,7 @@ function Home() {
                     .sort((a, b) => a.orderNo - b.orderNo)
                     .map((item, index) =>
                       item.games.length > 1 ? (
-                        <div  key={index}>
+                        <div key={index}>
                           {/* <div className="d-flex flex-row tab-title">
                             <h4 className="text-capitalize text-white font-weight-700">
                               {item.categoryName}
