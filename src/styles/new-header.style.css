@@ -1,4 +1,4 @@
-.header {
+.header-container {
   width: 100%;
   height: 70px;
   background-color: var(--dark-slate-gray);
@@ -26,21 +26,21 @@
   object-fit: contain;
 }
 
-.nav-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
+.header-container .toggle-header {
+  display: none;
+  position: relative;
+  top: 25px;
 }
 
-.toggle-header{
-    display: none;
-    position: relative;
-    top: 25px;
+.header-container .toggle-header icon {
+  font-size: 20px;
 }
 
-.toggle-header icon{
-    font-size: 20px;
+.header-container .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
 }
 
 .nav-links {
@@ -57,7 +57,7 @@
   text-transform: uppercase !important;
 }
 
-.actions {
+.header-container .actions {
   display: flex;
   gap: 10px;
 }
@@ -75,7 +75,7 @@
 
 .btn-filled {
   background-color: var(--light-bright-green);
-  color: black;
+  color: var(--dark);
   padding: 6px 14px;
   border-radius: 5px;
   border: none;
@@ -84,32 +84,22 @@
   height: 40px;
 }
 
-@media (max-width: 1080px) {
-  .nav .nav-links {
-    display: none;
-  }
-  .nav-container{
-    display: none;
-  }
-  .toggle-header{
-    display: block;
-}
-}
-
-
 .mobile-menu {
   position: fixed;
   top: -100vh;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: var(--dark-slate-gray);
-  color: white;
+  background-color: var(--dark-slate-gray-1);
+  color: var(--white);
   z-index: 999;
   transition: top 0.4s ease-in-out;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  max-height: 672px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 .mobile-menu.open {
@@ -118,22 +108,83 @@
 
 .mobile-menu-header {
   display: flex;
-  justify-content: flex-end;
   font-size: 24px;
   margin-bottom: 20px;
   cursor: pointer;
 }
 
-.mobile-menu-items {
+.mobile-logo {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
-.mobile-menu-item {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 10px;
+.mobile-menu-items .popular-provider {
+  width: 100%;
+  height: 48px;
+  background-color: var(--dark-slate-gray);
+  padding: 2px 5px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.provider-section {
+  padding: 10px 0;
+  color: var(--white);
+}
+
+.provider-section h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.provider-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.provider-grid .provider-card {
+  background-color: var(--dark-slate-gray);
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.provider-card img {
+  max-height: 40px;
+  object-fit: contain;
+}
+
+.header-game-listing {
+  padding-inline: 46px 17px;
+  padding-block: 20px;
+}
+
+.header-game-listing .header-game-name {
+  height: 40px;
+}
+
+.header-game-listing .header-game-number {
+  color: var(--transparent-white);
+}
+
+@media (max-width: 1080px) {
+  .nav .nav-links {
+    display: none;
+  }
+  .nav-container {
+    display: none;
+  }
+  .header-container .toggle-header {
+    display: block;
+  }
 }

@@ -4,22 +4,10 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
 
 const NewHeader = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
-
+  const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
-  const navItems = [
-    {
-      label: 'PLAY VEGAS SLOTS',
-      icon: '/assets/images/bet-slot.webp',
-      href: '#',
-    },
-    { label: 'LIVE TABLES', icon: '/assets/images/bet-slot.webp', href: '#' },
-    { label: 'SPORT', icon: '/assets/images/bet-slot.webp', href: '#' },
-    { label: 'IN-PLAY(LIVE)', icon: '/assets/images/bet-slot.webp', href: '#' },
-    { label: 'SUPANUMBERS', icon: '/assets/images/bet-slot.webp', href: '#' },
-  ];
   return (
-    <header className="header">
+    <header className="header-container">
       <nav className="nav d-flex gap-1">
         <span className="toggle-header" onClick={toggleMenu}>
           <MenuIcon />
@@ -100,19 +88,120 @@ const NewHeader = () => {
       </div>
 
       {/* Mobile Menu Modal */}
-<div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
-  <div className="mobile-menu-header">
-    <span onClick={toggleMenu}><CloseIcon /></span>
-  </div>
-  <div className="mobile-menu-items">
-    <div className="mobile-menu-item">PLAY VEGAS SLOTS</div>
-    <div className="mobile-menu-item">LIVE TABLES</div>
-    <div className="mobile-menu-item">SPORT</div>
-    <div className="mobile-menu-item">IN-PLAY(LIVE)</div>
-    <div className="mobile-menu-item">SUPANUMBERS</div>
-  </div>
-</div>
+      <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
+        <div className="mobile-menu-header">
+          <div className='d-flex align-items-center justify-content-space'>
+            <div className="close-icons">
+              <span onClick={toggleMenu}>
+                <CloseIcon />
+              </span>
+            </div>
+            <div className="">
+              <div className="logo-img mobile-logo">
+                <Image
+                  alt="logo"
+                  src="/assets/images/superbet.webp"
+                  width={220}
+                  height={70}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div className="mobile-menu-items">
+          <div className="popular-provider">Popular Provider</div>
+        </div>
+        <div className="provider-section">
+          <div className="provider-grid">
+            <div className="provider-card">
+              <Image
+                width="1500"
+                height={100}
+                src="/assets/images/3_Oaks.webp"
+                alt="Habanero"
+              />
+            </div>
+            <div className="provider-card">
+              <Image
+                width={1500}
+                height={100}
+                src="/assets/images/Hacksaw.webp"
+                alt="Habanero"
+              />
+            </div>
+            <div className="provider-card">
+              <Image
+                width={1500}
+                height={100}
+                src="/assets/images/Endorphina.webp"
+                alt="Habanero"
+              />
+            </div>
+            <div className="provider-card">
+              <Image
+                width={1500}
+                height={100}
+                src="/assets/images/Pragmaticnew.webp"
+                alt="Habanero"
+              />
+            </div>
+            <div className="provider-card">
+              <Image
+                width={1500}
+                height={100}
+                src="/assets/images/Evolution.webp"
+                alt="Habanero"
+              />
+            </div>
+            <div className="provider-card">
+              <Image
+                width={1500}
+                height={100}
+                src="/assets/images/Pragmaticnew.webp"
+                alt="Habanero"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="mobile-menu-items">
+          <div className="popular-provider">Casino Category</div>
+        </div>
+        <div className="header-game-listing">
+          <div className="header-game-name d-flex align-items-center justify-content-between">
+            <div className="header-game-name">All Game</div>
+            <div className="header-game-number">737</div>
+          </div>
+          <div className="header-game-name d-flex align-items-center justify-content-between mt-2">
+            <div className="header-game-name">Flip 2 Win</div>
+            <div className="header-game-number">50</div>
+          </div>
+          <div className="header-game-name d-flex align-items-center justify-content-between mt-2">
+            <div className="header-game-name"></div>
+            <div className="header-game-number">7</div>
+          </div>
+          <div className="header-game-name d-flex align-items-center justify-content-between mt-2">
+            <div className="header-game-name"></div>
+            <div className="header-game-number">20</div>
+          </div>
+          <div className="header-game-name d-flex align-items-center justify-content-between mt-2">
+            <div className="header-game-name">Drop and Wins</div>
+            <div className="header-game-number">73</div>
+          </div>
+          <div className="header-game-name d-flex align-items-center justify-content-between mt-2">
+            <div className="header-game-name">Crash Games</div>
+            <div className="header-game-number">737</div>
+          </div>
+          <div className="header-game-name d-flex align-items-center justify-content-between mt-2">
+            <div className="header-game-name">Bet Games</div>
+            <div className="header-game-number">37</div>
+          </div>
+          <div className="header-game-name d-flex align-items-center justify-content-between v">
+            <div className="header-game-name">New Games</div>
+            <div className="header-game-number">73</div>
+          </div>
+        </div>
+      </div>
     </header>
   );
 };
