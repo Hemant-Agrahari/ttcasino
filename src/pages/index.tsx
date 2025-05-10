@@ -28,8 +28,6 @@ function Home() {
         {/* Game List */}
 
         <GameListSlider />
-        {/* <GameList/> */}
-
         {/* search bar */}
         <div className="search-wrapper">
           <div className="search-container">
