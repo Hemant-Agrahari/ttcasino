@@ -1,0 +1,64 @@
+.game-list-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  background-color: #1e1e26;
+  gap: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #555 var(--dark-slate-gray-1);
+}
+
+.game-list-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-item {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: var(--dark-slate-gray-1);
+  color: var(--white);
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.scroll-item:hover {
+  background-color: #3a3a45;
+}
+
+.scroll-item.active {
+  background-color: var(--orange);
+  color: var(--dark);
+  font-weight: bold;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.label {
+  line-height: 1.2;
+}
+
+.game-list-scroll-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.game-list-scroll-container::-webkit-scrollbar-track {
+  background: var(--dark-slate-gray-1);
+}
+
+.game-list-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid var(--dark-slate-gray-1);
+}

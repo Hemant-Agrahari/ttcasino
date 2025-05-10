@@ -37,4 +37,6 @@
 @import url('promo.styles.css');
 @import url('sticky-bar.style.css');
 @import url('new-header.style.css');
-@import url('new-provider.styles.css');
+@import url('provider.styles.css');
+@import url('game-list-slider.styles.css');
+@import url('search-bar.styles.css');

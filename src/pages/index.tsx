@@ -9,7 +9,7 @@ import Loader from '@/component/common/mui-component/Loader';
 import { useGetHomeGameQuery } from '@/redux/games/gameSlice';
 import Image from 'next/image';
 import MenuSlider from '@/layout/MenuSlider';
-import GameList from '@/component/game-list';
+import GameListSlider from '@/component/GameListSlider';
 
 // Method is for language switch
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -20,53 +20,14 @@ export const getStaticProps: GetStaticProps = async (context) => {
 function Home() {
   const { data: gamesList, isLoading } = useGetHomeGameQuery();
 
-  const categories = [
-    { name: 'All Games', icon: '/assets/images/home-1.svg' },
-    {
-      name: 'Live Tables',
-      icon: '/assets/images/livetables.svg',
-      active: true,
-    },
-    { name: 'New', icon: '/assets/images/new.svg' },
-    { name: 'Bet Games', icon: '/assets/images/betgames.svg' },
-    { name: 'First Games', icon: '/assets/images/1stp.svg' },
-    { name: 'Blacl Jack', icon: '/assets/images/blackjackicon.svg' },
-    { name: 'New', icon: '/assets/images/new.svg' },
-    { name: 'Bet Games', icon: '/assets/images/betgames.svg' },
-    { name: 'First Games', icon: '/assets/images/1stp.svg' },
-    { name: 'Blacl Jack', icon: '/assets/images/blackjackicon.svg' },
-    { name: 'New', icon: '/assets/images/new.svg' },
-    { name: 'Bet Games', icon: '/assets/images/betgames.svg' },
-    { name: 'First Games', icon: '/assets/images/1stp.svg' },
-    { name: 'Blacl Jack', icon: '/assets/images/blackjackicon.svg' },
-    { name: 'New', icon: '/assets/images/new.svg' },
-    { name: 'Bet Games', icon: '/assets/images/betgames.svg' },
-    { name: 'First Games', icon: '/assets/images/1stp.svg' },
-    { name: 'Blacl Jack', icon: '/assets/images/blackjackicon.svg' },
-    { name: 'New', icon: '/assets/images/new.svg' },
-    { name: 'Bet Games', icon: '/assets/images/betgames.svg' },
-    { name: 'First Games', icon: '/assets/images/1stp.svg' },
-    { name: 'Blacl Jack', icon: '/assets/images/blackjackicon.svg' },
-  ];
-
   return (
     <div>
       <div className="">
         {/* Silder */}
         <TopBanners />
         {/* Game List */}
-        <div className="scroll-container">
-          {categories.map((item, index) => (
-            <div
-              key={index}
-              className={`scroll-item ${item.active ? 'active' : ''}`}
-            >
-              <img src={item.icon} alt={item.name} className="icon" />
-              <span className="label">{item.name}</span>
-            </div>
-          ))}
-        </div>
 
+        <GameListSlider />
         {/* <GameList/> */}
 
         {/* search bar */}

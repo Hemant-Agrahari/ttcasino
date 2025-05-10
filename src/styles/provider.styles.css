@@ -1,0 +1,42 @@
+/* provider */
+.provider-scroll-container {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  display: flex;
+  overflow-x: auto;
+  padding: 4px;
+  background-color: #1e1e26;
+  gap: 16px;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #555 var(--dark-slate-gray-1);
+}
+
+.provider-card {
+  flex: 0 0 auto;
+  background-color: #2c2c3c;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  height: 40px;
+}
+
+.provider-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.provider-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid var(--dark-slate-gray-1);
+}
+
+.provider-scroll-container::-webkit-scrollbar-track {
+  background: #1f1f2b;
+}
