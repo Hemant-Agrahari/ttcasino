@@ -29,7 +29,7 @@
 .header-container .toggle-header {
   display: none;
   position: relative;
-  top: 25px;
+  top: 12px;
 }
 
 .header-container .toggle-header icon {
@@ -41,6 +41,10 @@
   align-items: center;
   justify-content: center;
   gap: 2px;
+}
+
+.open-icon {
+  font-size: 50px;
 }
 
 .nav-links {
@@ -86,25 +90,23 @@
 
 .mobile-menu {
   position: fixed;
-  top: -100vh;
-  left: 0;
-  transform: translateY(-100%);
-  width: 100%;
+  top: 0;
+  left: -100vw; /* hide it off-screen to the left */
+  width: 100vw;
   height: 100vh;
   background-color: var(--dark-slate-gray-1);
   color: var(--white);
   z-index: 999;
-  transition: top 0.4s ease-in-out;
+  transition: left 0.4s ease-in-out;
   display: flex;
   flex-direction: column;
-  max-height: 672px;
   overflow-y: auto;
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
 
 .mobile-menu.open {
-  top: 0;
+  left: 0;
 }
 
 .mobile-menu {
@@ -115,11 +117,10 @@
   transform: translateY(0);
 }
 
-
 .mobile-menu-header {
   display: flex;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   cursor: pointer;
 }
 
@@ -127,6 +128,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 295px;
+}
+
+.mobile-close-section {
+  width: 100%;
+  height: 48px;
+  background-color: var(--dark-slate-gray);
+}
+
+.mobile-close-section .close-icons {
+  padding-inline: 10px 0px;
 }
 
 .mobile-menu-items .popular-provider {
@@ -196,5 +208,60 @@
   }
   .header-container .toggle-header {
     display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-open-icon .open-icon {
+    font-size: 30px;
+  }
+  .logo-img {
+    width: 120px;
+  }
+  .log-images {
+    width: 120px;
+  }
+  .btn-filled,
+  .btn-outline {
+    width: 80px;
+    height: 40px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .log-images {
+    width: 90px;
+  }
+    .logo-img{
+    width: 90px;
+  }
+  .log-images {
+    width: 90px;
+  }
+
+  .btn-filled,
+  .btn-outline {
+    width: 80px;
+    height: 30px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo-img {
+    width: 69px;
+  }
+  .log-images {
+    width: 60px;
+  }
+  .log-images {
+    width: 80px;
+  }
+  .btn-filled,
+  .btn-outline {
+    width: 60px;
+    height: 20px;
+    font-size: 5px;
+    padding: 3px 7px;
   }
 }

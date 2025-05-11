@@ -8,16 +8,17 @@ const NewHeader = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   return (
     <header className="header-container">
-      <nav className="nav d-flex gap-1">
-        <span className="toggle-header" onClick={toggleMenu}>
-          <MenuIcon />
-        </span>
+      <nav className="nav d-flex align-items-center justify-content-center gap-1">
+        <div className="toggle-header" onClick={toggleMenu} className='modal-open-icon'>
+          <MenuIcon className='open-icon'/>
+        </div>
         <div className="logo-img">
           <Image
             alt="logo"
             src="/assets/images/superbet.webp"
             width={220}
             height={70}
+            className='img-fluid logo-images'
           />
         </div>
         <div className="nav-container nav-links">
@@ -27,7 +28,7 @@ const NewHeader = () => {
               alt="img"
               width={25}
               height={25}
-              className="nav-img"
+              className="img-fluid nav-img"
             />
             <span className="yellow-class">PLAY VEGAS SLOTS</span>
           </div>
@@ -37,7 +38,7 @@ const NewHeader = () => {
               alt="img"
               width={25}
               height={25}
-              className="nav-img"
+              className="img-fluid nav-img"
             />
             <span className="yellow-class">LIVE TABLES</span>
           </div>
@@ -47,7 +48,7 @@ const NewHeader = () => {
               alt="img"
               width={25}
               height={25}
-              className="nav-img"
+              className="img-fluid nav-img"
             />
             <span>SPORT</span>
           </div>
@@ -57,7 +58,7 @@ const NewHeader = () => {
               alt="img"
               width={25}
               height={25}
-              className="nav-img"
+              className="img-fluid nav-img"
             />
             <span>IN-PLAY(LIVE)</span>
           </div>
@@ -67,7 +68,7 @@ const NewHeader = () => {
               alt="img"
               width={25}
               height={25}
-              className="nav-img"
+              className="img-fluid nav-img"
             />
             <span>SUPANUMBERS</span>
           </div>
@@ -90,21 +91,19 @@ const NewHeader = () => {
       {/* Mobile Menu Modal */}
       <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
         <div className="mobile-menu-header">
-          <div className='d-flex align-items-center justify-content-space'>
+          <div className="d-flex align-items-center justify-content-space mobile-close-section">
             <div className="close-icons">
               <span onClick={toggleMenu}>
                 <CloseIcon />
               </span>
             </div>
-            <div className="">
-              <div className="logo-img mobile-logo">
-                <Image
-                  alt="logo"
-                  src="/assets/images/superbet.webp"
-                  width={220}
-                  height={70}
-                />
-              </div>
+            <div className="logo-img mobile-logo">
+              <Image
+                alt="logo"
+                src="/assets/images/superbet.webp"
+                width={120}
+                height={70}
+              />
             </div>
           </div>
         </div>
