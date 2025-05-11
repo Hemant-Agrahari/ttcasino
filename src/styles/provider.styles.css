@@ -1,4 +1,3 @@
-/* provider */
 .provider-scroll-container {
   position: fixed;
   top: 70px;
@@ -8,16 +7,16 @@
   display: flex;
   overflow-x: auto;
   padding: 4px;
-  background-color: #1e1e26;
+  background-color: var(--dark-blue-gray-1);
   gap: 16px;
   white-space: nowrap;
   scrollbar-width: thin;
-  scrollbar-color: #555 var(--dark-slate-gray-1);
+  scrollbar-color: var(--gray-1000) var(--dark-slate-gray-1);
 }
 
 .provider-card {
   flex: 0 0 auto;
-  background-color: #2c2c3c;
+  background-color: var(--dark-blue-gray-2);
   border-radius: 10px;
   padding: 10px 20px;
   display: flex;
@@ -38,5 +37,5 @@
 }
 
 .provider-scroll-container::-webkit-scrollbar-track {
-  background: #1f1f2b;
+  background: var(--dark-blue-gray-3);
 }

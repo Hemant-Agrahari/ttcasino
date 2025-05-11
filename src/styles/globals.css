@@ -22,6 +22,7 @@
   --gray-700: #232323;
   --gray-800: #171717;
   --gray-900: #3b3939;
+  --gray-1000:#555;
   --gray-2:#26364b;
   --gray-charcoal: #212529;
   --gray-1: #ddd;
@@ -114,6 +115,9 @@
   --dark-slate-gray-1:#272930;
   --dark-slate-gray-2:#373a43;
   --dark-slate-gray-3:#3c3f48;
+  --dark-blue-gray-1:#1e1e26;
+  --dark-blue-gray-2:#2c2c3c;
+  --dark-blue-gray-3:#1f1f2b;
   --light-bright-green:#6dfe8f;
   --light-white-1:#a0a0a0;
 }
