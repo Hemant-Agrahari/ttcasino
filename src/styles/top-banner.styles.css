@@ -68,6 +68,10 @@
   background-color: rgba(255, 255, 255, 0.6);
 }
 
+.slick-dots {
+    bottom: 3px !important;
+}
+
 .homeBanner-slider .vip-slider .slick-dots li.slick-active {
   width: 1.75rem;
   background-color: var(--white);

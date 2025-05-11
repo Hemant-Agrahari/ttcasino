@@ -120,6 +120,8 @@
   --dark-blue-gray-3:#1f1f2b;
   --light-bright-green:#6dfe8f;
   --light-white-1:#a0a0a0;
+  --dark-blue-gray-color:#373a43;
+  --dark-blue-gray-color-1:#272930;
 }
 
 .opacity-1 {
@@ -260,7 +262,7 @@ input:-webkit-autofill {
 }
 
 body {
-  background-color: #272930 !important;
+  background-color: var(--dark-blue-gray-color-1) !important;
   font-size: 14px !important;
   line-height: normal !important;
   overflow-x: hidden;

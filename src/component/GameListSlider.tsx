@@ -60,6 +60,70 @@ const GameListSlider = () => {
       label: 'Crash',
     },
     { type: 'text', label: 'New', icon: '/assets/images/new.svg' },
+    {
+      type: 'text',
+      icon: '/assets/images/blackjackicon.svg',
+      label: 'Live Tables',
+    },
+    {
+      type: 'text',
+      icon: '/assets/images/blackjackicon.svg',
+      label: 'Live Tables',
+    },
+    {
+      type: 'text',
+      icon: '/assets/images/aviator-anim.gif',
+      label: 'Crash',
+    },
+    { type: 'text', label: 'New', icon: '/assets/images/new.svg' },
+    {
+      type: 'text',
+      icon: '/assets/images/blackjackicon.svg',
+      label: 'Live Tables',
+    },
+    {
+      type: 'text',
+      icon: '/assets/images/blackjackicon.svg',
+      label: 'Live Tables',
+    },
+    {
+      type: 'text',
+      icon: '/assets/images/aviator-anim.gif',
+      label: 'Crash',
+    },
+    { type: 'text', label: 'New', icon: '/assets/images/new.svg' },
+    {
+      type: 'text',
+      icon: '/assets/images/blackjackicon.svg',
+      label: 'Live Tables',
+    },
+    {
+      type: 'text',
+      icon: '/assets/images/blackjackicon.svg',
+      label: 'Live Tables',
+    },
+    {
+      type: 'text',
+      icon: '/assets/images/aviator-anim.gif',
+      label: 'Crash',
+    },
+    { type: 'text', label: 'New', icon: '/assets/images/new.svg' },
+    {
+      type: 'text',
+      icon: '/assets/images/blackjackicon.svg',
+      label: 'Live Tables',
+    },
+    {
+      type: 'text',
+      icon: '/assets/images/blackjackicon.svg',
+      label: 'Live Tables',
+    },
+    {
+      type: 'text',
+      icon: '/assets/images/aviator-anim.gif',
+      label: 'Crash',
+    },
+    { type: 'text', label: 'New', icon: '/assets/images/new.svg' },
 
     {
       type: 'text',

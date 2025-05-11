@@ -49,4 +49,5 @@
   color: var(--white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  bottom: 4px;
 }

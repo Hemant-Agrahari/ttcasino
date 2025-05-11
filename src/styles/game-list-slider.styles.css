@@ -1,8 +1,7 @@
 .game-list-slider-wrapper {
   display: flex;
   gap: 12px;
-  padding: 10px;
-  background-color: var(--dark-blue-gray-1);
+  padding: 4px;
   overflow-x: auto;
   white-space: no-wrap;
   scrollbar-width: thin;
@@ -12,7 +11,7 @@
 .game-list-item {
   width: 70px;
   height: 60px;
-  background-color: var(--dark-blue-gray-2);
+  background-color: var(--dark-blue-gray-color);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -22,6 +21,7 @@
   text-align: center;
   flex-direction: column;
   flex: 0 0 auto;
+  margin-left: 4px;
 }
 
 .icon-wrapper {
